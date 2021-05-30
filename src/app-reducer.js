@@ -1,6 +1,6 @@
 const reducer = (state, action) => {
   const { type, payload } = action;
-  if (type == 'START_LOADING') {
+  if (type === 'START_LOADING') {
     return { ...state, loading: true };
   }
   if (type === 'SET_STATES') {

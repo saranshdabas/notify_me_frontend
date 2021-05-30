@@ -19,7 +19,7 @@ const connector = axios.create({
 
 const backEndConn = axios.create({
   baseURL:
-    'http://Notifyme-env-new.eba-w6wadney.ap-south-1.elasticbeanstalk.com/api',
+    'https://Notifyme-env-new.eba-w6wadney.ap-south-1.elasticbeanstalk.com/api',
 });
 
 const initialState = {

@@ -2,6 +2,32 @@
   text-align: center;
 }
 
+.title {
+  margin-top: -4rem;
+  margin-bottom: 8rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: whitesmoke;
+  min-width: 20rem;
+  min-height: 24rem;
+  padding: 2rem;
+  padding-top: 1.2rem !important;
+}
+
+.tabs {
+  padding-bottom: 2rem;
+}
+
+.form-control {
+  min-width: 16rem !important;
+  margin-bottom: 2rem !important;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

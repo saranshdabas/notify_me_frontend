@@ -67,7 +67,6 @@ function App() {
           dispatch({ type: 'SET_DISTRICTS', payload: res.data.districts });
         })
         .catch((error) => {
-          console.log('error', error);
           dispatch({
             type: 'OPEN_ERROR',
             payload: 'Api Setu failure, please try after some time.',
@@ -90,7 +89,6 @@ function App() {
         .get('/user', { params: { email: state.email } })
         .then((res) => {
           if (res.data.data.length) {
-            console.log('HERE');
             dispatch({
               type: 'OPEN_ERROR',
               payload: 'Email already registered.',
@@ -104,7 +102,7 @@ function App() {
               .then((res) => {
                 dispatch({
                   type: 'OPEN_SUCCESS',
-                  payload: 'Congratulations, you have been registered.',
+                  payload: 'Congrats, registrated successfully.',
                 });
               })
               .catch((error) => {
@@ -126,7 +124,6 @@ function App() {
         .get('/user', { params: { email: state.email } })
         .then((res) => {
           if (res.data.data.length) {
-            console.log(res.data.data[0]._id);
             backEndConn
               .delete(`/post/${res.data.data[0]._id}`)
               .then((res) => {

@@ -4,7 +4,6 @@ const reducer = (state, action) => {
     return { ...state, loading: true };
   }
   if (type === 'SET_STATES') {
-    console.log(payload);
     return { ...state, selectedState: payload[0].state_id, states: payload };
   }
   if (type === 'SET_STATE') {

@@ -181,7 +181,7 @@ function App() {
           </a>
         </span>
         <article class='icons'>
-          <span>Connect and report issue:</span>
+          <span>Connect and report issues:</span>
           <a
             href='https://www.instagram.com/_alpha0mega_/'
             target='_blank'

@@ -62,3 +62,12 @@
     transform: rotate(360deg);
   }
 }
+
+@media screen and (max-width: 600px) {
+  .title {
+    max-width: 27rem;
+  }
+  .card {
+    width: 80%;
+  }
+}

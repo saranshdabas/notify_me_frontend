@@ -14,7 +14,7 @@ import MuiAlert from '@material-ui/lab/Alert';
 import axios from 'axios';
 import { FiInstagram } from 'react-icons/fi';
 import { AiFillLinkedin } from 'react-icons/ai';
-import { Link } from 'react-router-dom';
+import { GoMarkGithub } from 'react-icons/go';
 
 const connector = axios.create({
   baseURL: 'https://cdn-api.co-vin.in/api/v2/admin',
@@ -162,6 +162,23 @@ function App() {
         <span className='title'>
           {' '}
           Subscribe to get email notification when slots for 18+ are available
+          <br />
+          <br />
+          Contribute:
+          <a
+            href='https://github.com/saranshdabas/notify_me_frontend'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <GoMarkGithub class='icon' />
+          </a>
+          <a
+            href='https://github.com/saranshdabas/NotifyMe'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <GoMarkGithub class='icon' />
+          </a>
         </span>
         <article class='icons'>
           <span>Connect and report issue:</span>

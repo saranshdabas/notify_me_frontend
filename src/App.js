@@ -12,6 +12,9 @@ import Tab from '@material-ui/core/Tab';
 import Snackbar from '@material-ui/core/Snackbar';
 import MuiAlert from '@material-ui/lab/Alert';
 import axios from 'axios';
+import { FiInstagram } from 'react-icons/fi';
+import { AiFillLinkedin } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 const connector = axios.create({
   baseURL: 'https://cdn-api.co-vin.in/api/v2/admin',
@@ -160,6 +163,23 @@ function App() {
           {' '}
           Subscribe to get email notification when slots for 18+ are available
         </span>
+        <article class='icons'>
+          <span>Connect and report issue:</span>
+          <a
+            href='https://www.instagram.com/_alpha0mega_/'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <FiInstagram class='icon' />
+          </a>
+          <a
+            href='https://www.linkedin.com/in/saranshdabas/'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <AiFillLinkedin class='icon' />
+          </a>
+        </article>
         <main className='card'>
           <Tabs
             className='tabs'

@@ -105,7 +105,7 @@ function App() {
               .then((res) => {
                 dispatch({
                   type: 'OPEN_SUCCESS',
-                  payload: 'Congrats, registrated successfully.',
+                  payload: 'Congrats, registered successfully.',
                 });
               })
               .catch((error) => {
